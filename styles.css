@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #3aafaa;
+}
+
+/*Явне задання статичного хедеру для маніпулювання ним в скрипті*/
+.header-static {
+  position: static;
+}
+
+/*Анімація повільного спуску хедера при скролі вниз*/
+.header-down {
+  position: fixed;
+  top: -90px;
+  transform: translateY(90px);
+  transition: transform 1s;
+}
+
+/*Анімація повільного підняття хедера при скролі вверх*/
+.header-up {
+  position: fixed;
+  top: -90px;
+  transform: translateY(-90px);
+  transition: transform 1s;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.header-logo {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -10px;
+}
+
+.header-text-logo {
+  color: gray;
+}
+
+.header-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-ul li {
+  margin: 0 15px;
+  list-style: none;
+}
+
+.header-ul li a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+.header-ul li a:hover {
+  color: #17232b;
+  transition: color 0.3s;
+  text-decoration: overline;
+}
+
+form {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+}
+
+.header-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  width: max-content;
+}
+
+.header-form-button button {
+  background-color: #17232b;
+  margin: 5px 5px;
+  color: white;
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.header-form-button button:hover {
+  background-color: #3aafaa;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: all 0.8s;
+}
+
+.header-form-search {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+form div label {
+  margin: 0 auto;
+  color: #3aafaa;
+}
+
+form div input {
+  border-radius: 3px;
+  border: 1px solid gray;
+  padding: 3px;
+  margin: 0;
+  width: 6rem;
+}
+
+.container-title {
+  background-image: url("https://images.unsplash.com/photo-1624269305548-1527ef905ff6?q=80&w=2742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  width: 100%;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 3.6rem;
+}
+
+.main-title {
+  position: relative;
+  top: 0;
+  left: 30%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.second-title {
+  position: relative;
+  top: 0;
+  left: 30%;
+  color: #17232b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #e0f2f0;
+}
+
+.about-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-description {
+  font-size: 2.5rem;
+  margin: 2em 2em 2em 0;
+}
+
+.photo1 {
+  position: relative;
+  top: 12em;
+  left: 12em;
+  width: 32em;
+  border: 7px solid #3aafaa;
+  border-radius: 20px;
+}
+
+.photo2 {
+  border-radius: 20px;
+  width: 40em;
+  border: 7px solid #3aafaa;
+}
+
+.our-service-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #3aafaa;
+}
+
+.our-service-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service {
+  width: 30em;
+}
+
+.our-service-wrapper h2 {
+  color: white;
+  font-size: 4rem;
+  margin: 2em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.our-service-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.our-service-wrapper ul li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12em;
+  margin: 2em;
+  overflow: hidden;
+}
+
+.our-service-wrapper ul li img {
+  width: 100%;
+  height: auto;
+}
+
+.our-service-wrapper ul li h3 {
+  position: absolute;
+  font-size: 3.3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 800px) {
+  .service {
+    width: 10em;
+  }
+  .our-service-wrapper h2 {
+    color: white;
+    font-size: 1rem;
+    margin: 1em;
+  }
+
+  .our-service-wrapper ul li {
+    height: 6em;
+    margin: 0.3em;
+  }
+
+  .our-service-wrapper ul li h3 {
+    font-size: 1rem;
+  }
+}
+
+.our-clients-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #c9c8c4;
+  display: flex;
+  justify-content: center;
+}
+
+.our-clients-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.our-clients-wrapper h2 {
+  margin: 1em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.our-clients-wrapper li {
+  line-height: 1.5em;
+  padding: 1em;
+}
+
+.contact-us-container {
+  height: 30vh;
+  width: 100%;
+  background-color: #3aafaa;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2em;
+  color: #17232b;
+}
+
+.contact-us-wrapper p {
+  margin: 1em;
+}
+
+.contact-us-wrapper p a {
+  text-decoration: none;
+  color: #17232b;
+}
+
+.contact-us-wrapper p a:hover {
+  color: gold;
+  transition: color 0.3s;
+}
+
+footer {
+  width: 100%;
+  background-color: #e0f2f0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 180px;
+  height: 180px;
+}
+
+.footer-ul li {
+  margin: 15px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-ul li a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+.footer-ul li a:hover {
+  color: #17232b;
+  transition: color 0.3s;
+  text-decoration: overline;
+}
+
+.footer-description {
+  width: 50%;
+}

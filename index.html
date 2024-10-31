@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="header">
+  <head>
+    <!--    Згідно з документації наступний тег <script> з бібліотекою unpkg в <head>-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+      ScrollReveal({ reset: true, delay: 200, duration: 600 });
+    </script>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div>
+          <h1 class="header-text-logo">LOGO</h1>
+          <a href="#">
+            <img src="./public/birds.png" alt="logo" class="header-logo" />
+          </a>
+        </div>
+        <div>
+          <nav>
+            <ul class="header-ul">
+              <li><a href="#"> HOME </a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#our-service">OUR SERVICE</a></li>
+              <li><a href="#our-clients">OUR CLIENTS</a></li>
+              <li><a href="#contact-us">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <form action="">
+            <div class="header-form-button">
+              <button id="sign-in">Sign in</button>
+              <button id="registration">Registration</button>
+            </div>
+            <div class="header-form-search">
+              <label for="search"> SEARCH </label>
+              <input type="text" id="search" placeholder="Click here..." />
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <div class="container-title">
+          <h1 class="main-title">This is Bla Bla</h1>
+          <h1 class="second-title">Test Task</h1>
+        </div>
+
+        <div id="about" class="about-container">
+          <div class="about-wrapper">
+            <div class="about-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium aliquid aut consequuntur cum debitis dicta dolor
+              doloremque eius expedita, facilis illo impedit mollitia nemo nisi
+              odio omnis sapiente tempore voluptatum.
+            </div>
+            <div class="about-photo">
+              <img src="public/creative.jpg" alt="" class="photo1" />
+              <img src="public/startups.jpg" alt="" class="photo2" />
+            </div>
+          </div>
+        </div>
+
+        <div id="our-service" class="our-service-container">
+          <div class="our-service-wrapper">
+            <h2>the services we will provide you</h2>
+            <ul>
+              <li class="service">
+                <img src="public/services/startups.jpg" alt="first service" />
+                <h3>first service</h3>
+              </li>
+              <li class="service">
+                <img
+                  src="public/services/creative-studios.jpg"
+                  alt="second service"
+                />
+                <h3>second service</h3>
+              </li>
+              <li class="service">
+                <img
+                  src="public/services/design-studios.jpg"
+                  alt="third service"
+                />
+                <h3>third service</h3>
+              </li>
+              <li class="service">
+                <img
+                  src="public/services/digital-agencies.jpg"
+                  alt="fourth service"
+                />
+                <h3>fourth service</h3>
+              </li>
+              <li class="service">
+                <img src="public/services/those.jpg" alt="fifth service" />
+                <h3>fifth service</h3>
+              </li>
+              <li class="service">
+                <img
+                  src="public/services/web-projects.jpg"
+                  alt="sixth service"
+                />
+                <h3>sixth service</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="our-clients" class="our-clients-container">
+          <div class="our-clients-wrapper">
+            <h2>OUR CLINETS</h2>
+            <ul class="cleints">
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid dolorem eum facere, minus nostrum nulla quos repudiandae
+                voluptates. Corporis, optio?
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aspernatur autem blanditiis dolore ducimus enim ipsam ipsum
+                iure, molestiae natus necessitatibus officia possimus quaerat,
+                quibusdam reprehenderit temporibus ullam ut vel voluptates!
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Necessitatibus, officia?
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+                blanditiis consectetur, consequuntur debitis dolorum ipsum
+                itaque laboriosam libero odit placeat porro quam rem repellendus
+                similique, sunt veniam voluptatum! Ad illum nihil odio provident
+                quaerat quidem sint sit sunt ut veniam?
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                aspernatur at culpa distinctio error excepturi, iure libero
+                magni maiores molestiae officiis, porro provident reiciendis
+                repudiandae, similique vel vero voluptas voluptatum!
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="contact-us" class="contact-us-container">
+          <div class="contact-us-wrapper">
+            <p>Телефон 1: <a href="tel:+79161234567">+7 (916) 123-45-67</a></p>
+            <p>Телефон 2: <a href="tel:+79012345678">+7 (901) 234-56-78</a></p>
+            <p>
+              Email: <a href="mailto:example@email.com">example@email.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div>
+          <a href="#">
+            <img src="./public/birds.png" alt="logo" class="footer-logo" />
+          </a>
+        </div>
+        <div>
+          <nav>
+            <ul class="footer-ul">
+              <li><a href="#"> HOME </a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#our-service">OUR SERVICE</a></li>
+              <li><a href="#our-clients">OUR CLIENTS</a></li>
+              <li><a href="#contact-us">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-description">
+          Description. Many many word here. Lorem Ipsum is simply dummy text of
+          the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make a type specimen
+          book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was
+          popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
